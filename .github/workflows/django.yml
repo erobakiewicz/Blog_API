@@ -23,7 +23,7 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       env:
-        DJANGO_SETTINGS_MODULE: cars_API.settings
+        DJANGO_SETTINGS_MODULE: Blog_API.settings
         SECRET_KEY: 123qwe
       run: |
         python manage.py test

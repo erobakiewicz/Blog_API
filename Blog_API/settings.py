@@ -65,8 +65,7 @@ ROOT_URLCONF = 'Blog_API.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
-        ,
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -139,6 +138,5 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ],
     'DEFAULT_SCHEMA_CLASS':
-        'rest_framework.schemas.coreapi.AutoSchema'
-    ,
+        'rest_framework.schemas.coreapi.AutoSchema',
 }
